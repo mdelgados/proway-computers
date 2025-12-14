@@ -1,0 +1,130 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+body{
+    line-height: 1;
+    font-family: "open sans", helvetica, arial, "sans-serif";
+}
+ol,ul{
+    list-style: none;
+}
+
+.main-header {
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.main-header__title {    
+    font-size: 92px;
+    letter-spacing: -1.5px;    
+}
+
+.main-header__title--blue {
+    color: var(--blue);
+}
+
+.main-header__title--orange {
+    color: var(--orange);
+}
+
+.main-header__menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.main-header__menu a {
+    padding: 10px 10px;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.main-header__menu a:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex: 1; 
+}
+
+.badge-carrinho {
+    background-color: var(--dark-blue);
+    padding: 0; 
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.search-form {
+    height: 44px;
+    display: flex;
+
+}
+
+.search-form input {
+    box-sizing: border-box;
+    height: 56px;
+    padding: 20px;
+    flex: 1;
+    background-color: var(--light-gray);
+    color: var(--gray);
+    border: none;
+    transition: all .3s ease-in-out;
+    font-size: 22px;
+}
+
+.search-form input:focus{
+    background-color: var(--blue);
+    outline: none;
+    color:#fff;
+}
+
+.search-form button {
+    width: 56px;
+    height: 56px;
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    font-size: 22px;
+}
+.blockquote, q{
+    quotes: none;
+}
+.blockquote::before, blockquote::after,
+q::before, q::after{
+    content: '';
+    content: none;
+
+}
+.table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:root{
+    --orange: #ff7000;
+    --blue: #004a76;
+    --dark-blue: #002d47;
+    --gray: rgba(88, 89, 91, 1);
+    --light-gray: rgba(232, 232, 232, 1);
+    --light-gray-2: rgb(247, 247, 247);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
